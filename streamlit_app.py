@@ -18,3 +18,5 @@ uncertainty = st.selectbox("Uncertainty", [1, 2, 3], index=0, format_func=lambda
 if st.button("Calculate Story Points"):
     story_points = calculate_story_points(technical, integration, implementation, testing, uncertainty)
     st.subheader(f"Story Points: {story_points}")
+
+st.write("© 2024 Rise Informatics")
